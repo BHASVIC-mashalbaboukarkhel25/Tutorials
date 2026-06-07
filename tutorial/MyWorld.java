@@ -1,0 +1,43 @@
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+/**
+ * Write a description of class MyWorld here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class MyWorld extends World
+{
+
+    /**
+     * Constructor for objects of class MyWorld.
+     * 
+     */
+    public MyWorld()
+    {    
+        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        super(800, 600, 1); 
+        prepare();
+    }
+    
+    /**
+     * Prepare the world for the start of the program.
+     * That is: create the initial objects and add them to the world.
+     */
+    private void prepare()
+    {
+
+        Player player = new Player();
+        addObject(player,182,77);
+        Enemy enemy = new Enemy();
+        addObject(enemy,165,234);
+        Enemy enemy2 = new Enemy();
+        addObject(enemy2,584,227);
+        Enemy enemy3 = new Enemy();
+        addObject(enemy3,387,350);
+        Enemy enemy4 = new Enemy();
+        addObject(enemy4,171,449);
+        Enemy enemy5 = new Enemy();
+        addObject(enemy5,586,470);
+    }
+}
